@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Library</title>
+    <script type="text/javascript">
+      function showForm() {
+        document.getElementById("bookForm").style.display = "block";
+      }
+    </script>
+
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+
+  <body>
+    <h1>My Library</h1>
+    <hr />
+    <div class="myLibrary">
+      <div class="myLibrary__card">
+        <div class="myLibrary__card__left">
+          <div class="myLibrary__card__left-image"><img src="" alt="" /></div>
+        </div>
+        <div class="myLibrary__card__right">
+          <div class="myLibrary__card__right-author">Author:</div>
+          <div class="myLibrary__card__right-title">Title:</div>
+          <div class="myLibrary__card__right-pages">Pages:</div>
+          <div class="myLibrary__card__right-status">Read:</div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+    <h1>Add books to my library</h1>
+
+    <hr />
+
+    <p>Add books to your library</p>
+
+    <button class="btnAddBook" onclick="showForm()">NEW BOOK</button>
+
+    <form id="bookForm" style="display: none">
+      <label for="bookName">Book Name: </label>
+      <input type="text" id="bookName" name="bookName" /><br />
+
+      <label for="bookAuthor">Book Author: </label>
+      <input type="text" id="bookAuthor" name="bookAuthor" /><br />
+
+      <label for="bookYear">Book Year: </label>
+      <input type="text" id="bookYear" name="bookYear" /><br />
+    </form>
+
+    <hr />
+  </body>
+</html>
